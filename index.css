@@ -1,0 +1,79 @@
+* {
+     box-sizing: border-box;
+}
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+.card {
+     text-align: center;
+     height: 370px;
+     width: 300px;
+     background: rgba(255, 115, 92, 1);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-radius: 10px;
+     padding: 8px;
+     position: relative;
+}
+.avatar {
+     width: 100px;
+     height: 100px;
+     overflow: hidden;
+     border-radius: 50%;
+     transform: translateY(-70px);
+}
+h2 {
+     margin-top: -50px;
+     letter-spacing: 3px;
+     color: white;
+}
+.description1 {
+     letter-spacing: 2px;
+     margin: 1.5px;
+     color: rgb(59, 57, 57);
+     font-size: 0.9rem;
+     font-weight: 500;
+}
+.description {
+     font-size: 1rem;
+     font-weight: 600;
+     color: rgb(34, 32, 32);
+     margin-top: 0px;
+}
+.social-links {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 4px;
+     gap: 6px;
+}
+
+.social-links i {
+     background: white;
+     font-size: 1rem;
+     height: 30px;
+     width: 30px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     cursor: pointer;
+     transition: 0.5s ease;
+     transform: translateY(0px);
+}
+.social-links i:hover {
+     transform: translateY(-5px);
+}
+
+/* for small screen*/
+@media screen and (max-width: 768px) {
+     .card {
+          width: 80%;
+     }
+}
